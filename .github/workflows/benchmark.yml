@@ -58,6 +58,7 @@ jobs:
         env:
           login: ${{ secrets.SURGE_LOGIN }}
           token: ${{ secrets.SURGE_TOKEN }}
+          gh: ${{ secrets.github_token }}
         with:
           domain: ${{ github.sha }}-${{ matrix.node-version }}-hexo.surge.sh
           project: ./.tmp-hexo-theme-unit-test/0x/
