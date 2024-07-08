@@ -248,3 +248,5 @@ export interface SiteLocals {
   tags: Model<TagSchema>; // _Model
   data: any;
 }
+
+console.log('test')
